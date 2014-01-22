@@ -2,8 +2,7 @@ function sendEmails() {
   var emailAddress = "email@example.com"
   var sheet = SpreadsheetApp.getActiveSheet();
   var startRow = 3;  // First row of data to process (ignore headers)
-  var numRows = 10000;   // MAX Number of rows to process - this is
-probably super hacky TODO: FIX THIS
+  var numRows = 10000;   // MAX Number of rows to process - this is probably super hacky TODO: FIX THIS
 
   var dataRange = sheet.getRange(startRow, 1, numRows, 3)
   // Fetch values for each row in the Range.
